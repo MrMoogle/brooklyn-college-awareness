@@ -170,14 +170,22 @@ hr.small {
     padding: 50px 0;
 }
 
-/* Services */
+/* FAQ */
 
-.services {
+.faq {
     padding: 50px 0;
 }
 
-.service-item {
+.faq-item {
     margin-bottom: 30px;
+}
+
+#accordion :hover{
+    cursor: pointer;
+}
+
+#accordion .ui-state-focus{
+    outline: none;
 }
 
 /* Callout */
