@@ -43,7 +43,7 @@ body {
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,1);
 }
 
 .btn-light {
@@ -180,8 +180,9 @@ hr.small {
     margin-bottom: 30px;
 }
 
-#accordion :hover{
+#accordion h3:hover{
     cursor: pointer;
+    color: #e2e0e0;
 }
 
 #accordion .ui-state-focus{
@@ -191,11 +192,12 @@ hr.small {
 /* Callout */
 
 .callout {
+    padding: 50px 0;
     display: table;
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/day.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
