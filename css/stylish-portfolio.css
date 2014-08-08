@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 .text-vertical-center {
@@ -55,8 +55,11 @@ body {
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
+    color: white;
+    background-color: transparent;
+    border-radius: 1px;
+    border-color: white;
+
 }
 
 /* Custom Horizontal Rule */
@@ -174,6 +177,18 @@ hr.small {
 
 .faq {
     padding: 50px 0;
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.faq p {
+    font-size: 16px;
 }
 
 .faq-item {
@@ -183,25 +198,15 @@ hr.small {
 #accordion h3:hover{
     cursor: pointer;
     color: #e2e0e0;
+/*    transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);*/
 }
 
 #accordion .ui-state-focus{
     outline: none;
-}
-
-/* Callout */
-
-.callout {
-    padding: 50px 0;
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/day.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 /* Portfolio */
@@ -210,42 +215,40 @@ hr.small {
     padding: 50px 0;
 }
 
-.portfolio-item {
+.img-portfolio {
+    position:relative;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
     margin-bottom: 30px;
 }
 
-.img-portfolio {
-    margin: 0 auto;
+.image-foo {
+    width: 100%;
+    position: relative;
 }
 
-.img-portfolio:hover {
-    opacity: 0.8;
+h3.foo { 
+   position: absolute; 
+   bottom: 1em;
+   left: 0px; 
+   width: 100%; 
 }
 
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+h3.foo span {
+   color: white; 
+   letter-spacing: -1px;  
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
 }
 
 /* Footer */
+.contact {
+    color: white;
+    background-color: #428bca;
+    padding: 50px 0;
+}
 
-footer {
-    padding: 100px 0;
+.contact a {
+    color: white;
 }
