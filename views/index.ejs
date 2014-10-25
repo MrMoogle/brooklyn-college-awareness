@@ -6,6 +6,17 @@
 	
 	<body>
 
+	<!-- Facebook like button -->
+ 	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=309667242450387&version=v2.0";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 		<!-- Navigation -->
 		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
 		<nav id="sidebar-wrapper">
@@ -160,6 +171,7 @@
 						</ul>
 					</div>
 				</div>
+				<div class="fb-like" data-href="http://www.brooklyncollegeawareness.org/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-colorscheme="light"></div>
 			</div>
 		</section>
 
@@ -214,10 +226,6 @@
 				$( "#accordion" ).accordion({collapsible: true, heightStyle: "content", active: false});
 			});
 
-			// For typer.js
-			$(function () {
-			  $('[data-typer-targets]').typer();
-			});
 		</script>
 	</body>
 </html>

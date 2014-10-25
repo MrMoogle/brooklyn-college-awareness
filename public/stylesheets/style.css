@@ -236,13 +236,9 @@ h3.foo span {
 
 /* Footer */
 .contact {
-    color: white;
-    background-color: #428bca;
+    color: #428bca;
+    background-color: white;
     padding: 50px 0;
-}
-
-.contact a {
-    color: white;
 }
 
 
